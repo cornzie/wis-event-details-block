@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/wis-event-details-block",
+	"version": "0.1.0",
+	"title": "Wis Event Details Block",
+	"category": "widgets",
+	"description": "WIS Event Detail block.",
+	"example": {},
+	"supports": {
+			"color": {
+			"background": true,
+			"text": true,
+			"heading": true
+		},
+		"html": false,
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true
+		}
+	},
+	"attributes": {
+        "title": { "type": "string", "default": "" },
+        "start_date": { "type": "string", "default": "" },
+        "end_date": { "type": "string", "default": "" },
+        "start_time": { "type": "string", "default": "" },
+        "end_time": { "type": "string", "default": "" },
+        "location": { "type": "string", "default": "" }
+    },
+	"textdomain": "wis-event-details-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
